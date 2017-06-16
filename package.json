@@ -114,7 +114,7 @@
     "compile": "tsc",
     "build": "concurrently \"npm run clean\" \"npm run compile\"",
     "lint": "tslint 'src/**/*.ts'",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build && npm run lint"
   },
   "typings": "./dist/index.d.ts",
   "version": "2.7.3"
